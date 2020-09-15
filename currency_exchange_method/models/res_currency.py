@@ -17,7 +17,7 @@ class ResCurrency(models.Model):
     @api.model
     def _get_conversion_rate(self, from_currency, to_currency):
         _super = super(ResCurrency, self)
-        res = _super._get_conversion_rate(from_currency,to_currency)
+        res = _super._get_conversion_rate(from_currency, to_currency)
 
         if (
             from_currency.rate_inverted and to_currency.rate_inverted or
