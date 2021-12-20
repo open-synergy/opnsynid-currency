@@ -20,9 +20,11 @@ class ResCurrency(models.Model):
         res = _super._get_conversion_rate(from_currency, to_currency)
 
         if (
-            from_currency.rate_inverted and to_currency.rate_inverted or
-                not from_currency.rate_inverted and
-                not to_currency.rate_inverted):
+            from_currency.rate_inverted
+            and to_currency.rate_inverted
+            or not from_currency.rate_inverted
+            and not to_currency.rate_inverted
+        ):
             return res
         else:
-            return 1/res
+            return 1 / res
