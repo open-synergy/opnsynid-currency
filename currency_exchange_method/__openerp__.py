@@ -8,16 +8,12 @@
     "name": "Currency Exchange Rate Inverted",
     "version": "8.0.1.0.0",
     "category": "Accounting & Finance",
-    "summary": "Allows to maintain an exchange rate using the inversion "
-               "method",
-    "author": "Eficent, "
-              "PT. Simetri Sinergi Indonesia, OpenSynergy Indonesia",
+    "summary": "Allows to maintain an exchange rate using the inversion " "method",
+    "author": "Eficent, " "PT. Simetri Sinergi Indonesia, OpenSynergy Indonesia",
     "website": "https://simetri-sinergi.id",
     "license": "AGPL-3",
     "depends": ["base"],
-    "data": [
-        "views/res_currency_view.xml"
-    ],
+    "data": ["views/res_currency_view.xml"],
     "test": [],
-    "installable": True
+    "installable": True,
 }
